@@ -26,5 +26,15 @@ namespace CRUD.Controllers
             _context.SaveChanges();
             return Ok(contato);
         }
+
+        [HttpGet("{id}")]
+        public IActionResult ObterPorId(string id)
+        {
+            var contato = _context.Contatos.Find();
+
+            if (contato == null)
+                return NotFound();
+            return Ok(contato);
+        }
     }
 }

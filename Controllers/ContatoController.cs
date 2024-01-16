@@ -19,7 +19,7 @@ namespace CRUD.Controllers
             _context = context;
         }
 
-        [HttpPost("CriarContato")]
+        [HttpPost]
         public IActionResult Create(Contato contato)
         {
             _context.Add(contato);

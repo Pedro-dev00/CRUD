@@ -30,7 +30,7 @@ namespace CRUD.Controllers
         [HttpGet("{id}")]
         public IActionResult ObterPorId(string id)
         {
-            var contato = _context.Contatos.Find();
+            var contato = _context.Contatos.Find(id);
 
             if (contato == null)
                 return NotFound();

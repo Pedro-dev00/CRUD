@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Controllers"
   ],
-  "SelectedNode": "\\CRUD.sln",
+  "SelectedNode": "\\Controllers\\ContatoController.cs",
   "PreviewInSolutionExplorer": false
 }

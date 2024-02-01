@@ -28,7 +28,7 @@ namespace CRUD.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult ObterPorId(string id)
+        public IActionResult ObterPorId(int id)
         {
             var contato = _context.Contatos.Find(id);
 

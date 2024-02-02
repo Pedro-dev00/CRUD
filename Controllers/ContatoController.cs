@@ -36,5 +36,13 @@ namespace CRUD.Controllers
                 return NotFound();
             return Ok(contato);
         }
+
+        [HttpDelete]
+        public IActionResult Delete(Contato contato)
+        {
+            _context.Remove(Contato);
+            _context.SaveChanges();
+            return Ok();
+        }
     }
 }
